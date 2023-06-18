@@ -7,8 +7,8 @@ const { getRole, deploySC, deploySCNoUp, ex, pEth } = require("../utils");
 const MINTER_ROLE = getRole("MINTER_ROLE");
 const BURNER_ROLE = getRole("BURNER_ROLE");
 
-// 21 de diciembre del 2022 GMT
-var startDate = 1671580800;
+// 17 de Junio del 2023 GMT
+var startDate = 1686960000;
 
 var makeBN = (num) => ethers.BigNumber.from(String(num));
 

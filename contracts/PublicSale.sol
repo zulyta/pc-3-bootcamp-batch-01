@@ -20,8 +20,8 @@ contract PublicSale is
     // Crear su setter
     IERC20Upgradeable miPrimerToken;
 
-    // 21 de diciembre del 2022 GMT
-    uint256 constant startDate = 1671580800;
+    // 17 de Junio del 2023 GMT
+    uint256 constant startDate = 1686960000;
 
     // Maximo price NFT
     uint256 constant MAX_PRICE_NFT = 50000 * 10 ** 18;
