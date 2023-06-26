@@ -9,8 +9,12 @@ contract USDCoin is ERC20, AccessControl {
 
     constructor() ERC20("USD Coin", "USDC") {
         _mint(msg.sender, 1000000 * 10 ** decimals());
-        _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
-        _grantRole(MINTER_ROLE, msg.sender);
+        _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
+        _setupRole(MINTER_ROLE, msg.sender);
+    }
+
+    function decimals() public pure override returns (uint8) {
+        return 6;
     }
 
     function mint(address to, uint256 amount) public onlyRole(MINTER_ROLE) {

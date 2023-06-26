@@ -1,4 +1,8 @@
 const hre = require("hardhat");
+const usdcTknAbi = require("../artifacts/contracts/USDCoin.sol/USDCoin.json");
+const miPrimerTknAbi = require("../artifacts/contracts/MiPrimerToken.sol/MiPrimerToken.json");//artifacts\contracts\MiPrimerToken.sol\MiPrimerToken.json
+const publicSaleAbi = require("../artifacts/contracts/PublicSale.sol/PublicSale.json");
+const nftTknAbi = require("../artifacts/contracts/NFT.sol/MiPrimerNft.json");
 
 const gcf = hre.ethers.getContractFactory;
 const dp = hre.upgrades.deployProxy;
